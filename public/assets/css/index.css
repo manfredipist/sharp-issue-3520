@@ -1,0 +1,12 @@
+.pusher{
+    padding: 20px !important;
+    min-height: 80vh !important;
+}
+.centered.grid .column{
+    padding:20px;
+    text-align:center !important;
+}
+
+#mapholder{
+    height:180px;
+}

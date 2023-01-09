@@ -1,0 +1,78 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.ui.main.fluid.container {
+	min-height: calc(100vh - 50px);
+	margin: 0;
+}
+
+.pusher{
+	min-height: calc(100vh - 112px) !important;
+}
+
+.top.attached.menu {
+	margin: 0;
+    width: 100%;
+}
+
+.ui.menu.segment {
+	padding : 0px;
+}
+
+.ui.basic.pushable.segment {
+	background-color: white;
+	margin: 0px;
+}
+
+.ui.footer {
+	background-color: #f5f5f5;
+	text-align: center;
+	height: 50px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.ui.footer .ui.grid{
+	height: 100%;
+}
+
+.ui.grid{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+  }
+  
+.ui.grid > .row{
+	padding: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+  
+.ui.grid > .column{
+	padding: 0;
+}
+
+.link{
+	cursor: pointer;
+}
+
+.very-bb-text{
+	font-size: 25px;
+	font-weight: 900;
+}
+.bb-text{
+	font-size: 20px;
+	font-weight: bold;
+}
+.b-text{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.s-text{
+	font-size: 15px;
+	color:#4e4e4e
+}
+

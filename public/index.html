@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>BookIt</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="author" content="Ing. Manfredi G.ppe Pistone">
+	<meta name="keywords" content="BookIt Padel Calcio Pallavolo Tennis Basket Book Prenota Campo Trova Campo">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/libs/fomantic.min.css" />
+	<link rel="stylesheet" href="assets/css/libs/croppie.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/libs/fomantic.min.js"></script>
+	<script src="assets/js/libs/croppie.min.js"></script>
+	<script src="assets/js/libs/exif.min.js"></script>
+	<script src="assets/js/index.js"></script>
+</head>
+
+<body>
+	<main class="ui main fluid container">
+		
+		<div class="ui basic pushable segment">
+			<!-- END SIDEBAR -->
+			<!-- START CONTENT -->
+			<div class="pusher">
+				<div class="ui stackable grid">
+					<div class="two columns row">
+						<div class="centered column">
+							<div class="image">
+								<img class="ui medium circular centered image" id="main-profile-picture"
+									src="assets/img/avatar/profile.png">
+							</div>
+						</div>
+						<div class="centered column">
+							<div class="ui stackable centered info grid">
+								<div class="ui bottom attached button" id="edit-profile-btn">
+									<i class="pen icon"></i>
+									Edit picture
+								</div>
+                                <div class="ui bottom attached button" id="reload-picture">
+									<i class="refresh icon"></i>
+									Reload picture 
+								</div>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END CONTENT -->
+
+			<!-- START MODALS -->
+
+			<div class="ui tiny edit profile modal">
+				<div class="header">Modifica il tuo profilo</div>
+				<div class="scrolling content">
+					<div class="ui edit profile form">
+						<div class="field">
+							<label>Foto Profilo</label>
+							<input type="file" accept="image/png,image/x-png,image/gif,image/jpeg,image/jpg;capture=camera"
+								name="image" id="image-selector">
+							<div id="image-preview-wrap">
+								<div id="image-preview"></div>
+							</div>
+						</div>
+						
+						<div class="ui error message"></div>
+					</div>
+				</div>
+				<div class="actions">
+					<div class="ui cancel button">Annulla</div>
+					<div class="ui primary approve button">Modifica</div>
+				</div>
+			</div>
+
+			<!-- END MODALS -->
+		</div>
+
+	</main>
+
+</body>
+
+</html>
