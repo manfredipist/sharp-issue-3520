@@ -14,13 +14,8 @@ module.exports = {
                 nearLossless: true, 
                 quality: 70 
             })
-            .toFile(filePath, function(err){
-                if(err){
-                    throw new Error(err);
-                }
-            });
-            //await new Promise(resolve => setTimeout(resolve, 1000));
-            return sharpInstance.options.fileOut.slice(7);
+            .toFile(filePath);
+            return filePath.slice(7);
         }catch(err){
             loggerService.printError(path.basename(__filename), "storePictureInWebP", err.message);
             throw new Error("Errore durante la memorizzazione della foto da te caricata");
